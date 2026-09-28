@@ -1,0 +1,1 @@
+print("Mana pirma programma")
