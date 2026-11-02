@@ -6,31 +6,39 @@ def peri(a=0,b=0,c=0):
 def lauk(a=0,b=0,c=0):
     pp = peri(a,b,c)/2
     laukums = math.sqrt(pp*(pp-a)*(pp-b)*(pp-c))
-    return laukums    
+    return laukums
+def istriss(a=0,b=0,c=0):
+    if c<(b+a) and b<(c+a) and a<(b+c):
+        return True
+    else: return False
+
+def trek(a, b, c):
+    if isnumeric(a)
+    if istriss(a,b,c):
+        # Šeit darbības, ja ir Jā
+        print(f"{a}, {b}, {c}")
+        print(f"Perimetrs={peri(a,b,c):.2f}")
+        print(f"Laukums={lauk(a,b,c):.2f}")
+    else:
+        # Šeit darbības, ja ir Nē    
+        print("Trissturi nevar izveidot")    
+
 
 print("Mana pirma programma")
-mala_a = 3
-mala_b = 6
-mala_c = 5
-if mala_c<(mala_b+mala_a) and mala_b<(mala_c+mala_a) and mala_a<(mala_b+mala_c):
-    # Šeit darbības, ja ir Jā
-    print(f"{mala_a}, {mala_b}, {mala_c}")
-    print(f"Perimetrs={peri(mala_a,mala_b,mala_c):.2f}")
-    print(f"Laukums={lauk(mala_a,mala_b,mala_c):.2f}")
-else:
-    # Šeit darbības, ja ir Nē    
-    print("Trissturi nevar izveidot")
+
+tri1 = [3, 6, 5]  # i=0 - mala a, i=1 - mala b, i=2 - mala c
+
+trek(tri1[0],tri1[1],tri1[2])
 
 # otrs trissturis
-mala_a = 4
-mala_b = 6
-mala_c = 5
-if mala_c<(mala_b+mala_a) and mala_b<(mala_c+mala_a) and mala_a<(mala_b+mala_c):
-    # Šeit darbības, ja ir Jā
-    print(f"{mala_a}, {mala_b}, {mala_c}")
-    print(f"Perimetrs={peri(mala_a,mala_b,mala_c):.2f}")
-    print(f"Laukums={lauk(mala_a,mala_b,mala_c):.2f}")
-else:
-    # Šeit darbības, ja ir Nē    
-    print("Trissturi nevar izveidot")
+tri2 = [4, 6, 5]  # i=0 - mala a, i=1 - mala b, i=2 - mala c
+trek(tri2[0],tri2[1],tri2[2])
+
+tri1[0] = 7
+
+trek(tri1[0],tri1[1],tri1[2])
+
+tri1[1] = "Diena"
+
+trek(tri1[0],tri1[1],tri1[2])
 
