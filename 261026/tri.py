@@ -13,15 +13,15 @@ def istriss(a=0,b=0,c=0):
     else: return False
 
 def trek(a, b, c):
-    if isnumeric(a)
-    if istriss(a,b,c):
+    if a.isnumeric:
+        if istriss(a,b,c):
         # Šeit darbības, ja ir Jā
-        print(f"{a}, {b}, {c}")
-        print(f"Perimetrs={peri(a,b,c):.2f}")
-        print(f"Laukums={lauk(a,b,c):.2f}")
-    else:
+            print(f"{a}, {b}, {c}")
+            print(f"Perimetrs={peri(a,b,c):.2f}")
+            print(f"Laukums={lauk(a,b,c):.2f}")
+        else:
         # Šeit darbības, ja ir Nē    
-        print("Trissturi nevar izveidot")    
+            print("Trissturi nevar izveidot")    
 
 
 print("Mana pirma programma")
